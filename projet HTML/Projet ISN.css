@@ -1,0 +1,1016 @@
+/*Tout ce qui est dans la Tête */
+@font-face{
+	font-family:midnight;
+	src:url('texte/Midnight Bangkok.ttf');}
+@font-face{
+	font-family:rosmatika;
+	src:url('texte/Quicksand_Book.otf'); }
+
+ @font-face{
+ 	font-family:fleche;
+ 	src:url('texte/Symbols.ttf');
+ }
+/*B*/
+.bandeau{	
+	background-image:url("images/fond.jpg");
+	position:fixed;
+	background-size:100%;
+	background-repeat: no-repeat;
+	top:0;
+	margin-left:-8px;
+	width:100%;
+	height:100px;
+	z-index:20;}
+
+/*H*/
+header{
+	font-family:rosmatika;
+	position: fixed;
+	text-align: center;
+	top:0px;
+	z-index:50;}
+
+header ul {
+	text-align: center;
+	list-style-type: none;
+	overflow: hidden;
+	position:fixed;
+	font-size:1.3em;
+	margin-left:-344px;
+	left:50%;}
+
+header li{
+	float: left;
+	border-radius: 10px;
+	transition: background-color 0.5s;}
+
+header li a{
+	display: inline-block;
+	color: white!important;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;}
+
+header li:hover{
+	background-color: rgba(129,129,129,0.5);
+	text-decoration: underline;
+	border-radius: 10px;
+	color: white !important;}
+
+header li.dropdown {
+    display: inline-block;
+    transition-delay:1s}
+
+header .dropdown-content {
+    border-radius:10px;
+    display: none;
+    color:white;
+    position: fixed;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);}
+
+header .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;}
+
+header .dropdown-content a:hover {
+	background-color: rgba(129,129,129,0.5);
+	transition:background-color 1s;
+	border-radius: 10px}
+
+header .dropdown:hover .dropdown-content {
+	background-color: #212121;
+	transition-duration: background-color 8s;
+	animation: fadein 1s;
+	display: block;
+}
+
+header .dropdown:hover .dropdown-content .premier{
+    animation: fadein 1s;}
+
+header .dropdown:hover .dropdown-content .deuxieme{
+    animation: fadein 2s;}
+
+header .dropdown:hover .dropdown-content .troisieme{
+    animation: fadein 3s;}
+
+header .dropdown:hover .dropdown-content .quatrieme{
+    animation: fadein 4s;}
+
+header .dropdown:hover .dropdown-content .cinquieme{
+    animation: fadein 5s;}
+
+header .dropdown:hover .dropdown-content .sixieme{
+    animation: fadein 6s;}
+
+header .dropdown:hover .dropdown-content .septieme{
+    animation: fadein 7s;}
+
+/*animation d'apparition*/
+@-moz-keyframes fadein{ /* sur Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* sur Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+/*I*/
+.ici {
+	background-color: white;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	border-radius: 10px}
+
+/*T*/
+.titre{
+	z-index:60;
+	position:fixed;
+	color:white;
+	font-family:midnight;
+	font-size : 4em;
+	padding-right: 2%;
+	padding-left: 2%;
+	padding-bottom: 0.5%;
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.5);
+	transition: all 2s;}
+
+.titre:hover{
+	transform: skew(10deg,10deg);
+	background-color: white ;
+	color:black;}
+
+.titre1{
+	z-index:60;
+	position:fixed;
+	color:white;
+	font-family:midnight;
+	font-size : 4em;
+	padding-right: 2%;
+	padding-left: 2%;
+	padding-bottom: 0.5%;
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.5);
+	transition: all 2s;}
+
+.titre1:hover{
+	transform: rotate(360deg);
+	background-color: white ;
+	color:black;}
+
+.titre2{
+	z-index:60;
+	position:fixed;
+	color:white;
+	font-family:midnight;
+	font-size : 4em;
+	padding-right: 2%;
+	padding-left: 2%;
+	padding-bottom: 0.5%;
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.5);
+	transition: all 2s;}
+
+.titre2:hover{
+	transform: matrix(0, 2, 2, 0,-10, 100);
+	background-color: white ;
+	color:black;}
+
+.titre3{
+	z-index:60;
+	position:fixed;
+	color:white;
+	font-family:midnight;
+	font-size : 4em;
+	padding-right: 2%;
+	padding-left: 2%;
+	padding-bottom: 0.5%;
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.5);
+	transition: all 2s;}
+
+.titre3:hover{
+	transform: rotateY(360deg);
+	background-color: white ;
+	color:black;}
+
+.titre4{
+	z-index:60;
+	position:fixed;
+	color:white;
+	font-family:midnight;
+	font-size : 4em;
+	padding-right: 2%;
+	padding-left: 2%;
+	padding-bottom: 0.5%;
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.5);
+	transition: all 2s;}
+
+.titre4:hover{
+	transform: scale(-0.9);
+	background-color: white ;
+	color:black;}
+
+/*Ce qui est dans le corps */
+
+/*A*/
+a.p1{
+	color: rgba(251,81,77);
+	background-color: black;
+	font-family:midnight;
+	transition-property: padding-right, padding-left, left, background-color, color;
+	transition-duration: 0.5s, 0.5s, 0.5s, 1s, 1s; }
+
+a.p1:hover,a.p1:focus{
+	background-color:  rgba(251,81,77);
+	color:black;
+	font-weight: 200;
+	padding-right:50px;
+	padding-left:50px;
+	left:-150px;}
+
+a.p2{
+	color: rgba(247,146,70);
+	background-color: black;
+	font-family:midnight;
+	transition-property: padding-right, padding-left, left, background-color, color;
+	transition-duration: 0.5s, 0.5s, 0.5s, 1s, 1s; }
+
+a.p2:hover,a.p2:focus{
+	background-color:  rgba(247,146,70);
+	color:black;
+	padding-right:50px;
+	padding-left:50px;
+	left:-150px;}
+
+a.p3{
+	color: rgba(130,251,123);
+	background-color: black;
+	font-family:midnight;
+	transition-property: padding-right, padding-left, left, background-color, color;
+	transition-duration: 0.5s, 0.5s, 0.5s, 1s, 1s; }
+
+a.p3:hover,a.p3:focus{
+	background-color:  rgba(130,251,123);
+	color:black;
+	padding-right:50px;
+	padding-left:50px;
+	left:-150px;}
+
+a.p4{
+	color: #aecccc;
+	background-color: black;
+	font-family:midnight;
+	transition-property: padding-right, padding-left, left, background-color, color;
+	transition-duration: 0.5s, 0.5s, 0.5s, 1s, 1s; }
+
+a.p4:hover,a.p4:focus{
+	background-color: #aecccc ;
+	color:black;
+	padding-right:50px;
+	padding-left:50px;
+	left:-150px;}
+
+article{
+	top:0;
+	z-index: 10;
+	position:absolute;
+	color:white;
+	margin-top: 110px;
+	margin-left:10%;
+	margin-right:10%;
+	margin-bottom: 50px;
+	background-color: rgba(0,0,0,0.5);
+    border-radius: 20px;}
+
+article a{
+	text-align: center;
+	font-size:2em;
+	border-style:solid;
+	border-radius:10px;
+	text-decoration: none;
+	position: absolute;
+	padding:12px;
+	display:inline-block;
+	width:200px;	
+	left:-112px;	
+	margin-left:50%;}
+
+audio{
+	margin-top: 50px;
+	left: -10%;
+	margin-left: 20%;
+	width:60%;}
+
+/*Avant-Après selection*/
+
+/*Premier choix*/
+
+.article-dropdown {
+  position:relative; ;
+  float:left;
+  margin-left:5px;
+  display: inline;
+  padding-bottom:10px;}
+
+.article-dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;}
+
+.article-dropdown:hover .article-dropdown-content {
+  display: block;
+  left:0;
+  height:500px;
+  top:-500px;}
+
+/*Deuxieme choix*/
+
+.article-dropdown1 {
+  position: absolute;
+  float:left;
+  margin-top: -19px;
+  margin-left:15px;
+  padding:0;
+  display: inline-block;}
+
+.article-dropdown-content1 {
+  display: none;
+  position: absolute;
+  padding: 0px;
+  z-index: 1;}
+
+.article-dropdown1:hover .article-dropdown-content1 {
+  display: block;
+  left:-230px;
+  top:-452px;}
+
+/*Troisième choix*/
+
+.article-dropdown2 {
+  position: absolute;
+  margin-top: -37px;
+  margin-left: 225px;
+  padding-left:15px;
+  padding-bottom: 50px;
+  display: inline-block;}
+
+.article-dropdown-content2 {
+  display: none;
+  position: absolute;
+  z-index: 1;}
+
+.article-dropdown2:hover .article-dropdown-content2 {
+  display: block;
+  left:-440px;
+  top:-452px;}
+
+/*B*/
+body {
+	background: url(images/fond.jpg) fixed repeat-y;
+	background-size: 100%;
+	z-index:5;	}
+
+.button{
+	padding-left:50%;
+	margin-left:-140px;
+}
+
+button{
+	position:absolute;
+	border-style:none;
+	margin-left:30%;
+	background-color:rgba(0,0,0,0);
+	font-family:fleche;
+	font-size:4em;
+	color:white;}
+
+button.avant{
+	transform:rotate(180deg);
+	left:-60px;
+	height:340px;
+	width:60px;
+	margin-top:10px;
+}
+
+button.apres{
+	margin-top:10px;
+	left:600px;
+	height:340px;
+	width:60px;
+}
+
+button.avant1{
+	transform:rotate(180deg);
+	margin-top:384px;
+	left:-60px;
+	height:340px;
+	width:60px;
+}
+
+button.apres1{
+	left:600px;
+	margin-top:10px;
+	height:340px;
+	width:60px;
+}
+
+button.play{
+	transform:rotate(180deg);
+	background-color: rgba(255,255,255,0.5);
+	margin-left:0;
+	height:60px;
+	width:280px;
+}
+button p{
+	transform:rotate(180deg);
+	margin-top:0;
+	text-indent: 0;
+	text-align:center;
+	text-shadow: 10px;
+	font-size:0.5em;
+	display:inline-block;
+	float:left;
+}
+
+button:hover{
+	background-color:white;
+	border-style:none;
+	color:black;
+	transition: background-color 2s, color 2s
+}
+/*C*/
+
+.centré1{
+	margin-left: 24%;}
+
+.centré2{
+	margin-left:13%;
+	margin-right: 10%;
+	display:inline-block;}
+
+/*D*/
+
+/*E*/
+embed{
+	padding:30px;
+	margin-top:-50px;
+	float:right;}
+
+/*F*/
+
+/*G*/
+
+/*H*/
+h1{
+	margin-left:10px;
+	font-size:4em;
+	font-family:midnight;}
+
+h2{
+	font-size: 4em;
+	font-family:midnight;
+	padding-bottom: 10px;
+	padding-left: 100px;
+	padding-right: 80px;
+	padding-top:100px; }
+
+h2.A{
+	display:block;}
+
+h2.B{
+	display:inline-block;
+	float:left;} 
+
+/*I*/
+img.dessin1{
+	width:50%;
+	margin-left:25%;}
+
+img.dessin2{
+	display:inline-block;
+	width:35%;
+	margin-left:10%;}
+
+img.dessin3{
+	display:inline-block;
+	width:35%;
+	margin-left:32.5%;
+}
+
+img.dessin4{
+	width:35%;
+	display:inline-block;
+	margin-bottom:15px;
+	margin-left:10%;}
+
+img.dessin5{
+	width:600px;
+	height:340px;
+	margin-left:30%;
+	margin-top:10px;
+	padding-bottom:20px;
+	transition:, width 2s;}
+
+img.dessin6{
+	width:10%;
+	margin-left: 45%;
+	transition: width 2s, margin-left 2s;}
+
+img.dessin6:hover{
+	width:40%;
+	margin-left:30%; }
+
+img.explications{
+	width:600px;
+	padding:30px;
+	display:inline-block;
+	float:left;}
+
+img.maphoto{
+	width:600px;
+	padding:12px;
+	padding-left:50%;
+	margin-left: -10%;
+	margin-left: -300px;}
+
+img.production{
+	width:200px;
+	padding:15px;
+	transition:width 1s;}
+
+img.production:hover{
+	display:inline-block;
+	width:400px;}
+
+img.production1{
+	padding:35px;
+	width:400px;
+	float:left;}
+
+img.production2{
+	width:400px;
+	margin-top:35px;
+	margin-left:35px; }
+
+img.production3{
+	width:450px;
+	float:right;
+	padding:30px;}
+
+img.production4{
+	padding:35px;
+	height:300px;
+	float:left;
+	display:block;}
+
+/*J*/
+
+/*K*/
+
+/*L*/
+
+/*M*/
+.maison{
+	background-color: rgba(0,0,0,0.5);
+	border-radius:10px;
+	position:fixed;
+	right:-10px;
+	bottom:5px;
+	z-index:20;
+	text-decoration:none;
+	text-align:center;
+	font-weight: bold;
+	word-spacing:5px;
+	letter-spacing: 1px;
+	text-indent: 0px;
+	color:white;
+	width:5%;
+	font-size:1em;
+	font-family:Rosmatika;
+	transition: background-color 1s,color 2s}
+
+.maison:hover .maison{
+	background-color: rgba(255,255,255,1);
+	color:black;
+}
+
+/*N*/
+
+/*O*/
+
+/*P*/
+p{
+	text-indent: 50px;
+	text-align: justify;
+	font-size:2em;
+	font-family: Rosmatika;
+	margin-left:25px;
+	margin-right: 25px;
+	padding:12px;}		
+
+p.Colonne{
+	display:inline;
+	position:relative;
+	top:-100px;}
+
+p.Colonne1{
+	margin-top:100px;
+	padding-bottom:70px;
+	display:block;}
+
+p.Colonne2{
+	margin-top:50px;}
+
+p.Colonne3{
+	min-width:50%;
+	display:block;}
+
+p.Colonne4{
+	position:relative;
+	margin-top:350px;
+	display:block;}
+
+p.détails{
+	font-size:1.5em;
+	margin-top: -50px;}
+
+.poèmes p{
+	padding-top: 90px;}
+
+.paroles1{
+	position:absolute;
+	text-align: center;
+	font-size:2em;
+	padding:15px;
+	font-family: Rosmatika;
+	margin-right: 52%;
+	display:block;
+	color:white;}
+
+.paroles2{
+	position:relative;
+	text-align:center;
+	font-size:2em;
+	padding:15px;
+	font-family:rosmatika;
+	margin-top:-110px;
+	margin-left: 50%;
+	display:block;
+	color:white;}
+
+.paroles3{
+	font-family:rosmatika;
+	font-size:2em;
+	color:white;
+	text-align:center;}
+
+.paroles1 .un, .paroles2 .un, .paroles3 .un{
+	color:white;
+	transition:color 1s;
+	transition-delay: 0s;}
+
+.paroles1 .deux, .paroles2 .deux, .paroles3 .deux{
+	color:white;
+	transition:color 1s;
+	transition-delay: 1s;}
+
+.paroles1 .trois, .paroles2 .trois, .paroles3 .trois{
+	color:white;
+	transition:color 1s;
+	transition-delay: 2s;}
+
+.paroles1 .quatre, .paroles2 .quatre, .paroles3 .quatre{
+	color:white;
+	transition:color 1s;
+	transition-delay: 3s;}
+
+.paroles1 .cinq, .paroles2 .cinq, .paroles3 .cinq{
+	color:white;
+	transition:color 1s;
+	transition-delay: 4s;}
+
+.paroles1 .six, .paroles2 .six, .paroles3 .six{
+	color:white;
+	transition:color 1s;
+	transition-delay: 5s;}
+
+.paroles1 .sept, .paroles2 .sept, .paroles3 .sept{
+	color:white;
+	transition:color 1s;
+	transition-delay: 6s;}
+
+.paroles1 .huit, .paroles2 .huit, .paroles3 .huit{
+	color:white;
+	transition:color 1s;
+	transition-delay: 7s;}
+
+.paroles1 .neuf, .paroles2 .neuf, .paroles3 .neuf{
+	color:white;
+	transition:color 1s;
+	transition-delay: 8s;}
+
+.paroles1 .dix, .paroles2 .dix, .paroles3 .dix{
+	color:white;
+	transition:color 1s;
+	transition-delay: 9s;}
+
+.paroles1 .onze, .paroles2 .onze, .paroles3 .onze{
+	color:white;
+	transition:color 1s;
+	transition-delay: 10s;}
+
+.paroles1 .douze, .paroles2 .douze, .paroles3 .douze{
+	color:white;
+	transition:color 1s;
+	transition-delay: 11s;}
+
+.paroles1 .treize, .paroles2 .treize, .paroles3 .treize{
+	color:white;
+	transition:color 1s;
+	transition-delay: 12s;}
+
+.paroles1 .quatorze, .paroles2 .quatorze, .paroles3 .quatorze{
+	color:white;
+	transition:color 1s;
+	transition-delay: 13s;}
+
+.paroles1 .quinze, .paroles2 .quinze, .paroles3 .quinze{
+	color:white;
+	transition:color 1s;
+	transition-delay: 14s;}
+
+.paroles1 .seize, .paroles2 .seize, .paroles3 .seize{
+	color:white;
+	transition:color 1s;
+	transition-delay: 15s;}
+
+.paroles3 .dix-sept{
+	color:white;
+	transition:color 1s;
+	transition-delay: 16s;}
+
+.paroles3 .dix-huit{
+	color:white;
+	transition:color 1s;
+	transition-delay: 17s;}
+
+.paroles3 .dix-neuf{
+	color:white;
+	transition:color 1s;
+	transition-delay: 18s;}
+
+.paroles3 .vingt{
+	color:white;
+	transition:color 1s;
+	transition-delay: 19s;}
+
+.paroles3 .vingt-et-un{
+	color:white;
+	transition:color 1s;
+	transition-delay: 20s;}
+
+.paroles3 .vingt-deux{
+	color:white;
+	transition:color 1s;
+	transition-delay: 21s;}
+
+.paroles3 .vingt-trois{
+	color:white;
+	transition:color 1s;
+	transition-delay: 22s;}
+
+.paroles3 .vingt-quatre{
+	color:white;
+	transition:color 1s;
+	transition-delay: 23s;}
+
+.paroles3 .vingt-cinq{
+	color:white;
+	transition:color 1s;
+	transition-delay: 24s;}
+
+.paroles3 .vingt-six{
+	color:white;
+	transition:color 1s;
+	transition-delay: 25s;}
+
+.paroles3 .vingt-sept{
+	color:white;
+	transition:color 1s;
+	transition-delay: 26s;}
+
+.paroles3 .vingt-huit{
+	color:white;
+	transition:color 1s;
+	transition-delay: 27s;}
+
+.paroles3 .vingt-neuf{
+	color:white;
+	transition:color 1s;
+	transition-delay: 28s;}
+
+.paroles3 .trente{
+	color:white;
+	transition:color 1s;
+	transition-delay: 29s;}
+
+.paroles3 .trente-et-un{
+	color:white;
+	transition:color 1s;
+	transition-delay: 30s;}
+
+.paroles3 .trente-deux{
+	color:white;
+	transition:color 1s;
+	transition-delay: 31s;}
+
+.paroles3 .trente-trois{
+	color:white;
+	transition:color 1s;
+	transition-delay: 32s;}
+
+.paroles3 .trente-quatre{
+	color:white;
+	transition:color 1s;
+	transition-delay: 33s;}
+
+.paroles3 .trente-cinq{
+	color:white;
+	transition:color 1s;
+	transition-delay: 34s;}
+
+.paroles3 .trente-six{
+	color:white;
+	transition:color 1s;
+	transition-delay: 35s;}
+
+.paroles3 .trente-sept{
+	color:white;
+	transition:color 1s;
+	transition-delay: 36s;}
+
+.paroles3 .trente-huit{
+	color:white;
+	transition:color 1s;
+	transition-delay: 37s;}
+
+.paroles3 .trente-neuf{
+	color:white;
+	transition:color 1s;
+	transition-delay: 38s;}
+
+.paroles3 .quarante{
+	color:white;
+	transition:color 1s;
+	transition-delay: 39s;}
+
+.paroles3 .quarante-et-un{
+	color:white;
+	transition:color 1s;
+	transition-delay: 40s;}
+
+.paroles3 .quarante-deux{
+	color:white;
+	transition:color 1s;
+	transition-delay: 41s;}
+
+.paroles3 .quarante-trois{
+	color:white;
+	transition:color 1s;
+	transition-delay: 42s;}
+
+.paroles3 .quarante-quatre{
+	color:white;
+	transition:color 1s;
+	transition-delay: 43s;}
+
+.paroles3 .quarante-cinq{
+	color:white;
+	transition:color 1s;
+	transition-delay: 44s;}
+
+.paroles3 .quarante-six{
+	color:white;
+	transition:color 1s;
+	transition-delay: 45s;}
+
+.paroles3 .quarante-sept{
+	color:white;
+	transition:color 1s;
+	transition-delay: 46s;}
+
+.paroles3 .quarante-huit{
+	color:white;
+	transition:color 1s;
+	transition-delay: 47s;}
+
+.paroles3 .quarante-neuf{
+	color:white;
+	transition:color 1s;
+	transition-delay: 48s;}
+
+.paroles3 .cinquante{
+	color:white;
+	transition:color 1s;
+	transition-delay: 49s;}
+
+.paroles3 .cinquante-et-un{
+	color:white;
+	transition:color 1s;
+	transition-delay: 50s;}
+
+.paroles3 .cinquante-deux{
+	color:white;
+	transition:color 1s;
+	transition-delay: 51s;}
+
+.paroles3 .cinquante-trois{
+	color:white;
+	transition:color 1s;
+	transition-delay: 52s;}
+
+.paroles3 .cinquante-quatre{
+	color:white;
+	transition:color 1s;
+	transition-delay: 53s;}
+
+.présentation{
+	position:relative;
+	margin-left:-340px;
+	padding-left:50%;
+	padding-bottom:10px;}
+
+.propos{
+	position: relative;
+	margin-left:0px;
+	height:450px;}
+
+/*Q*/
+
+/*R*/
+
+/*S*/
+
+/*T*/
+
+.top{
+	margin-top:-100px;}
+
+.triangle1{
+	display:inline-block;
+	margin-left:10%;
+    margin-right:-10%;}
+
+.triangle2{
+	display:inline-block;
+	margin-left:10%;}
+
+/*U*/
+
+/*V*/
+video{
+	left:-10%;
+	margin-left: 30%;}
+
+video.performance{
+	width:60%;
+	position:relative;}
+
+video.performance1{
+	width:60%;
+	position:relative;}
+
+/*W*/
+
+/*X*/
+
+/*Y*/
+
+/*Z*/

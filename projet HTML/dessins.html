@@ -1,0 +1,116 @@
+﻿<!-- Created: 17/12/2019 by maxime.granet -->
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Book d'Hélène</title>
+    <meta name="dessins-personnels" content="dessins">
+    <link rel="stylesheet" href="Projet ISN.css">
+  </head>
+  <body>
+  	<div class="titre1"> Book </div>
+    <div class="bandeau">
+    	<header> 
+      	<ul> 
+      		<li> <a href="présentation.html"> Présentation </a></li>
+      		<li> <div class="dropdown"> <div class="ici"> Dessins </div>
+            <div class="dropdown-content">
+        			<div class="premier"> <a href="dessins.html#1"> Peinture </a> </div>
+        			<div class="deuxieme"> <a href="dessins.html#2"> Dessin graphique </a> </div>
+        			<div class="troisieme"> <a href="dessins.html#3"> Noir et blanc </a> </div>
+        			<div class="quatrieme"> <a href="dessins.html#4"> Couleur </a> </div>
+        			<div class="cinquieme"> <a href="dessins.html#5"> Dessins à l'aquarelle </a> </div>
+        			<div class="sixieme"> <a href="dessins.html#6"> Calligraphie </a> </div>
+              <div class="septieme"> <a href="dessins.html#7">Avant-après</a> </div>
+      		  </div> </div> </li>
+      		<li> <div class="dropdown"> <a href="artsplastiques.html"> Arts-plastiques </a>
+            <div class="dropdown-content">
+              <div class="premier"> <a href="artsplastiques.html#1"> Dessin d'observation </a> </div>
+              <div class="deuxieme"> <a href="artsplastiques.html#2"> Sculpture </a> </div>
+              <div class="troisieme"> <a href="artsplastiques.html#3"> Dessins expressifs</a> </div>
+              <div class="quatrieme"> <a href="artsplastiques.html#4"> Performance </a> </div>
+              <div class="cinquieme"> <a href="artsplastiques.html#5"> Séquence sur l'eau </a> </div>
+              <div class="sixieme"> <a href="artsplastiques.html#6"> Corps fragmenté </a> </div>
+              <div class="septieme"> <a href="artsplastiques.html#7"> Oxymore </a> </div>
+          </div> </div> </li>
+      		<li> <div class="dropdown"> <a href="musiques.html" > Musiques </a>
+          <div class="dropdown-content">
+            	<div class="premeier"> <a href="musiques.html#1"> No one ever understand </a> </div>
+            	<div class="deuxieme"> <a href="musiques.html#2"> Je l'aime à mourir </a> </div>
+            	<div class="troisieme"> <a href="musiques.html#3"> U-turn (lily) </a> </div>
+          </div> </div> </li>
+      		<li> <a href="poèmes.html"> Poèmes </a> </li>
+      	</ul>
+    	</header>
+    </div>
+
+    <div id="maison"> </div>
+    <article>
+        <div class="top"> <h2 class="A" id="1"> Peinture </h2> </div>
+          <img class="dessin1" src="images/sun.jpg" alt="sun" title="sun">
+
+        <h2 class="A"id="2"> Dessin graphique </h2>
+          <img class="dessin3" src="images/flamfleur.png" alt="flamfleur" title="flamfleur">
+
+        <h2 class="A"id="3"> Noir et blanc </h2>
+          <img class="dessin4" src="images/iloveyou.jpg" alt="I love you" title="I love you">
+          <img class="dessin4" src="images/pensées.jpg" alt="Pensées" title="Pensées">
+          <img class="dessin4" src="images/briquet.jpg" alt="Briquet" title="Briquet">          
+          <img class="dessin4" src="images/réalisme.jpg" alt="Réalisme" title="Réalisme">
+
+        <h2 class="A"id="4"> Couleur </h2>
+        	<img class="dessin6" src="images/Couleur.jpg">
+        
+        <h2 class="A"id="5"> Dessins à l'aquarelle </h2>
+          <img class="dessin2" src="images/poissons.jpg" alt="Poissons" title="Poissons">
+          <img class="dessin2" src="images/etincelle.jpg" alt="Étincelle" title="Étincelle">
+        
+        <h2 class="A"id="6"> Calligraphie </h2>
+          <img class="dessin1" src="images/calligraphie.jpg" alt="Calligraphie" title="Calligraphie">
+        
+        <h2 class="A" id="7"> Avant-Après </h2>
+          <div class="button">
+            <button class="avant" onclick="avant()"> Z </button>
+            <button class="apres" onclick="après()"> Z </button>
+          </div>
+          <img class="dessin5" id="galerie" src="images/avant-après5.jpg">
+          <button class="avant1" onclick = "avant1()"> Z </button>
+            <img class="dessin5" id="galerie1" src="images/avant-après1.jpg">
+          <button class="apres1" onclick = "après1()"> Z </button>
+    </article>
+
+
+    <div class="maison"> <a href="#maison"> <p class="maison"> retour haut de page </p> </a> </div>
+  </body>
+  <script>
+          var images=['images/avant-après5.jpg','images/avant-après4.jpg'];
+          var image=['images/avant-après1.jpg','images/avant-après2.jpg','images/avant-après3.jpg'];
+          var num=0;
+          var num1=0;
+          function avant(){
+            var galerie = document.getElementById("galerie");
+            num++;
+            if (num >= images.length) {num=0;}
+            galerie.src = images[num] ;   }
+
+          function après(){
+            var galerie = document.getElementById("galerie");
+            num--;
+            if (num<0){num=1;}
+            galerie.src = images[num]; }
+
+          function avant1(){
+            var galerie1 = document.getElementById("galerie1");
+            num1--;
+            if (num1<0) {num1=2;}
+            galerie1.src = image[num1];
+          }
+
+          function après1(){
+            var galerie1 = document.getElementById("galerie1");
+            num1++;
+            if (num1>=image.length) {num1=0;}
+            galerie1.src = image[num1];
+          }
+      </script>
+</html>
